@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background: #050505;
+  color: white;
+  font-family: Inter, sans-serif;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+
+}
+
+.app {
+
+  width: 100%;
+  max-width: 480px;
+
+}
+
+.topbar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+}
+
+.logo {
+
+  font-size: 32px;
+  font-weight: 700;
+
+}
+
+.tagline {
+
+  color: #888;
+  margin-top: 5px;
+
+}
+
+.history-btn {
+
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+
+  background: #111;
+  border: none;
+
+  color: white;
+  font-size: 20px;
+
+}
+
+.main-card {
+
+  background: #101010;
+
+  border-radius: 30px;
+
+  padding: 30px;
+
+  border: 1px solid #1f1f1f;
+
+  margin-bottom: 20px;
+
+}
+
+.wave-container {
+
+  position: relative;
+
+  width: 220px;
+  height: 220px;
+
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.wave {
+
+  position: absolute;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 50%;
+
+  animation: pulse 3s infinite;
+
+}
+
+.wave1 {
+  width: 160px;
+  height: 160px;
+}
+
+.wave2 {
+  width: 190px;
+  height: 190px;
+  animation-delay: 1s;
+}
+
+.wave3 {
+  width: 220px;
+  height: 220px;
+  animation-delay: 2s;
+}
+
+@keyframes pulse {
+
+  0% {
+    transform: scale(0.9);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.9);
+    opacity: 0.3;
+  }
+
+}
+
+.record-btn {
+
+  width: 110px;
+  height: 110px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  background: white;
+  color: black;
+
+  font-size: 38px;
+
+  z-index: 5;
+
+  box-shadow: 0 0 40px rgba(255,255,255,0.12);
+
+}
+
+.status {
+
+  text-align: center;
+
+  margin-top: 25px;
+
+  color: #888;
+
+}
+
+.tones {
+
+  display: flex;
+  gap: 10px;
+
+  overflow-x: auto;
+
+  margin-top: 30px;
+
+}
+
+.tone {
+
+  background: #181818;
+
+  border: 1px solid #262626;
+
+  color: white;
+
+  padding: 12px 18px;
+
+  border-radius: 100px;
+
+  white-space: nowrap;
+
+}
+
+.tone.active {
+
+  background: white;
+  color: black;
+
+}
+
+.result-card {
+
+  background: #101010;
+
+  border-radius: 30px;
+
+  padding: 25px;
+
+  border: 1px solid #1f1f1f;
+
+}
+
+.result-card h2 {
+
+  margin-bottom: 20px;
+
+}
+
+textarea {
+
+  width: 100%;
+  height: 180px;
+
+  background: #181818;
+
+  border: 1px solid #2b2b2b;
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  color: white;
+
+  resize: none;
+
+  font-size: 16px;
+
+}
+
+.actions {
+
+  display: flex;
+  gap: 10px;
+
+  margin-top: 20px;
+
+}
+
+.actions button {
+
+  flex: 1;
+
+  padding: 15px;
+
+  border-radius: 18px;
+
+  border: none;
+
+  font-size: 16px;
+
+}
+
+#copyBtn {
+
+  background: #181818;
+  color: white;
+
+}
+
+#shareBtn {
+
+  background: #25D366;
+  color: white;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.history-panel {
+
+  position: fixed;
+
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  max-width: 420px;
+
+  height: 100vh;
+
+  background: #0d0d0d;
+
+  padding: 25px;
+
+  z-index: 50;
+
+  overflow-y: auto;
+
+}
+
+.history-header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+}
+
+.history-item {
+
+  background: #151515;
+
+  padding: 18px;
+
+  border-radius: 18px;
+
+  margin-bottom: 15px;
+
+  border: 1px solid #222;
+
+}

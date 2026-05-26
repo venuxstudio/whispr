@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Whispr</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- HEADER -->
+
+  <div class="topbar">
+
+    <div>
+      <h1 class="logo">Whispr</h1>
+      <p class="tagline">Refine your voice beautifully</p>
+    </div>
+
+    <button class="history-btn" id="historyBtn">
+      ☰
+    </button>
+
+  </div>
+
+  <!-- MAIN CARD -->
+
+  <div class="main-card">
+
+    <!-- WAVE -->
+
+    <div class="wave-container">
+
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+
+      <button id="recordBtn" class="record-btn">
+        🎤
+      </button>
+
+    </div>
+
+    <!-- STATUS -->
+
+    <div class="status" id="status">
+      Tap to record
+    </div>
+
+    <!-- TONES -->
+
+    <div class="tones">
+
+      <button class="tone active">Professional</button>
+      <button class="tone">Friendly</button>
+      <button class="tone">Confident</button>
+
+    </div>
+
+  </div>
+
+  <!-- RESULT -->
+
+  <div class="result-card hidden" id="resultCard">
+
+    <h2>Refined Message</h2>
+
+    <textarea id="refinedText"></textarea>
+
+    <div class="actions">
+
+      <button id="copyBtn">
+        Copy
+      </button>
+
+      <button id="shareBtn">
+        WhatsApp
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- HISTORY PANEL -->
+
+  <div class="history-panel hidden" id="historyPanel">
+
+    <div class="history-header">
+      <h2>History</h2>
+
+      <button id="closeHistory">
+        ✕
+      </button>
+    </div>
+
+    <div id="historyList"></div>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
